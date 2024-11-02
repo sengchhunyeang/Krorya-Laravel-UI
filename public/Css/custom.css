@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Moulpali&display=swap');
+.krorya-color-primary {
+    color: #D7AD45;
+}
+
+.krorya-color-primary-background {
+    background-color: #D7AD45
+}
+
+.secondary {
+    color: #AC1927
+}
+
+.background1 {
+    background-color: #F5F5F5
+}
+
+.moulpali-regular {
+    font-family: "Moulpali", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body, .kantumruy-pro {
+    font-family: "Kantumruy Pro", sans-serif;
+    font-optical-sizing: auto;
+}
