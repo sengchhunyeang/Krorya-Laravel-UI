@@ -23,6 +23,10 @@
 
 body, .kantumruy-pro {
     font-family: "Kantumruy Pro", sans-serif;
-    
+    color: #2B2B2B;
     font-optical-sizing: auto;
+}
+
+.text-color{
+    color: #2B2B2B;
 }

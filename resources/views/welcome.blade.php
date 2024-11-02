@@ -11,6 +11,22 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
     <link rel="stylesheet" href="Css/custom.css">
+    <style>
+        .text-image-login {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+            background-color: rgba(155, 153, 153, 0.095);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px); 
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 1.2em;
+        }
+    </style>
 </head>
 
 <body>
@@ -26,7 +42,7 @@
                         <div class="d-flex justify-content-center p-2">
                             <img src="images/Group.png" alt="Group.png" width="50%">
                         </div>
-                        <p class="fs-6 text-center p-2">សូមវាយបញ្ចូលអុីម៉ែលនិង ពាក្យសម្ងាត់</p>
+                        <p class="fs-6 text-center p-2">សូមវាយបញ្ចូលអុីម៉ែលនិង ពាក្យសម្ងាត់ដើម្បីចូលគណនី</p>
                         <form class="p2 ">
                             <div class="form-group p-2">
                                 <input type="email" class="form-control" id="exampleInputEmail1"
@@ -49,8 +65,11 @@
                     </div>
                 </div>
                 <div class="col-md-6 d-flex justify-content-center">
-                    <div class="description-login">
-                        <img src="images/rice.png" alt="rice" width="100%">
+                    <div style="position: relative; width: 100%;">
+                        <img src="images/rice.png" alt="rice" style="width: 100%; display: block;">
+                        <div class="text-image-login">
+                            ម្ហូបខ្មែរមានភាពសម្បូរបែបអស្ចារ្យ ដែលបង្ហាញពីប្រណីតភាពនៃ រសជាតិ ព្រមទាំងគំនិតច្នៃប្រឌិត ។
+                        </div>
                     </div>
                 </div>
             </div>
