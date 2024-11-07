@@ -30,3 +30,13 @@ body, .kantumruy-pro {
 .text-color{
     color: #2B2B2B;
 }
+.krorya-welcome {
+    background: linear-gradient(180deg, #AE8E3E 0%, #AF8620 38%, #322608 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent; /* Fallback for non-supporting browsers */
+}
+.box-shadow{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
