@@ -39,6 +39,16 @@
         .spacing-between-elements button {
             margin-bottom: 20px;
         }
+
+        .carousel-item:hover .bg-primary {
+            background-color: #007bff; /* Primary color on hover */
+        }
+
+        .carousel-item .group-hover\:bg-primary:hover {
+            background-color: #007bff; /* Make sure background turns primary on hover */
+        }
+
+
     </style>
 </head>
 
@@ -142,9 +152,10 @@
                         </div>
                     </div>
                     <div class="col-lg">
-                        b
+                        <div class="row">
+                            <x-category-card image="images/category/all.svg" title="ទាំងអស់"></x-category-card>
+                        </div>
                     </div>
-
                 </div>
                 <div class="col">
                     C

@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\CategoryCon;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,3 +20,6 @@ Route::get('/', function () {
 Route::get('home', function () {
     return view('home');
 });
+
+// Define the route to the homepage
+Route::get('/', [CategoryCon::class, 'home']);
