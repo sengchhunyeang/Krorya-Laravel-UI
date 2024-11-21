@@ -26,6 +26,8 @@ return array(
     'App\\Providers\\EventServiceProvider' => $baseDir . '/app/Providers/EventServiceProvider.php',
     'App\\Providers\\RouteServiceProvider' => $baseDir . '/app/Providers/RouteServiceProvider.php',
     'App\\View\\Components\\Card' => $baseDir . '/app/View/Components/Card.php',
+    'App\\View\\Components\\CategoryCard' => $baseDir . '/app/View/Components/CategoryCard.php',
+    'App\\View\\Components\\RecipeCard' => $baseDir . '/app/View/Components/RecipeCard.php',
     'Attribute' => $vendorDir . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
     'Brick\\Math\\BigDecimal' => $vendorDir . '/brick/math/src/BigDecimal.php',
     'Brick\\Math\\BigInteger' => $vendorDir . '/brick/math/src/BigInteger.php',

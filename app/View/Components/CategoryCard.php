@@ -11,9 +11,13 @@ class CategoryCard extends Component
     /**
      * Create a new component instance.
      */
-    public function __construct()
+     public $image;
+     public $title;
+    public function __construct($image,$title)
     {
         //
+        $this->image = $image;
+        $this->title=$title;
     }
 
     /**

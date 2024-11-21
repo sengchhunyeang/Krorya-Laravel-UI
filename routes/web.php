@@ -1,8 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\CategoryCon;
-/*
+use App\Http\Controllers\DashboardController;
+/*use App\Http\Controllers\DashboardController;
 |--------------------------------------------------------------------------
 | Web Routes
 |--------------------------------------------------------------------------
@@ -12,7 +12,7 @@ use App\Http\Controllers\CategoryCon;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
+Route::get('home', [DashboardController::class, 'home'])->name('home');
 Route::get('/', function () {
     return view('welcome');
 });
@@ -21,5 +21,8 @@ Route::get('home', function () {
     return view('home');
 });
 
-// Define the route to the homepage
-Route::get('/', [CategoryCon::class, 'home']);
+// routes/web.php
+
+
+
+
