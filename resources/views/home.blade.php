@@ -33,7 +33,6 @@
             background-color: #e9ecef;
             color: #d9534f;
         }
-
         .spacing-between-elements h1,
         .spacing-between-elements div,
         .spacing-between-elements button {
@@ -135,7 +134,6 @@
                                             <img src="images/skip.svg" alt="">
                                         </button>
                                     </div>
-
                                 </div>
                                 <div class="col-lg"></div>
 
@@ -154,5 +152,4 @@
         </div>
     </div>
 </body>
-
 </html>
