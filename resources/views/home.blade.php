@@ -22,13 +22,13 @@
             <div class="col">
                 <div class="recipe">
                     <x-recipe-card recipeImage="images/food1.jpeg" altText="Delicious recipe image"
-                        recipeName="បាយឆាផ្តើមស្នេហ៍" duration="45 mins" level="ងាយស្រួល"  liked="true"/>
+                        recipeName="បាយឆាផ្តើមស្នេហ៍" duration="45 mins" level="ងាយស្រួល"  liked="true"></x-recipe-card>
 
                 </div>
             </div>
             <div class="col">
                 <x-card image="images\food1.jpeg" altText="បាយឆាផ្តើមស្នេហ៍" content="បាយឆាផ្តើមស្នេហ៍" rate="4.5"
-                    price="4500" />
+                    price="4500"></x-card>
             </div>
         </div>
     </div>
