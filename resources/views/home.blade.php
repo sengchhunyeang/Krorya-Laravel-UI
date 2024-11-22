@@ -49,9 +49,9 @@
     <!-- Content Area -->
     <div class="flex-1">
         <!-- Navbar -->
-        <nav class="bg-white shadow p-4">
+        <nav class="bg-white  p-4">
             <div class="flex justify-between items-center">
-                <div class="text-xl font-bold  text-[#AC1927] ">ការកម្មង់ម្ហូប</div>
+                <div class="text-xl font-bold  text-[#AC1927] ">ទំព័រដើម</div>
                 <div class="flex space-x-4">
                     <button class="p-2">
                         <img src="images/nav/card.svg" alt="card.svg" class="w-6 h-6">
@@ -67,59 +67,125 @@
         </nav>
 
         <!-- Welcome, Section -->
-        <section class="flex h-full flex-col-reverse md:flex-row items-center md:h-52 rounded-2xl m-5 ">
-            <div class="p-9 w-full md:w-1/2 h-55 bg-white flex flex-col gap-3 justify-center items-start rounded-t-md md:rounded-l-md md:rounded-t-none rounded-2xl">
+        <section class="flex items-center justify-between bg-white  shadow-md rounded-2xl m-6 p-6">
+            <!-- Text Section -->
+            <div class="w-full md:w-1/2">
                 <h1 class="krorya-welcome md:text-4xl font-bold text-slate-700">
                     ស្វាគមន៍មកកាន់ក្រយ៉ា
                 </h1>
                 <p class="text-sm md:text-md text-slate-800">
                     ម្ហូបខ្មែរ មានច្រើនសណ្ឋានដូចជា ស្ល ឆា ចៀន ស្ងោរ ជាដើម
-                    <br />
+                    <br/>
                     និងមានរសជាតិប្លែកៗពីគ្នា។
                 </p>
                 <Button href="/" class="px-4 py-2 btn rounded-md text-white krorya-color-primary-background">
                     ស្វែងរកមុខម្ហូប
                 </Button>
             </div>
-            <div class="w-full md:w-1/2 h-55 md:h-full ">
-                <img src="images/welcome_image.png" alt="welcome_image.png" class="rounded shadow w-full">
+            <!-- Image Section -->
+            <div class="w-full md:w-1/2">
+                <img src="images/welcome_image.png" alt="Food" class="rounded-2xl shadow-lg w-full object-cover">
             </div>
         </section>
 
+
+
         <!-- Card Filter Section -->
-        <div class="grid grid-cols-2 gap-4 m-5">
-            <div class="bg-white shadow mt-4 p-6 rounded">
-                <div class="flex items-center justify-between mb-4">
-                    <div class="flex items-center">
-                        <img src="images/flower.svg" alt="flower" class="w-6 h-6 mr-2">
-                        <div class="font-medium text-gray-700">បញ្ជីមុខម្ហូប</div>
+        <div class="grid grid-cols-3 gap-4 m-5">
+            <!-- Left Section -->
+            <div class="col-span-2 space-y-6">
+                <!-- Categories Section -->
+                <div class="bg-white shadow rounded-2xl mt-4 p-6 ">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="flex items-center">
+                            <img src="images/flower.svg" alt="flower" class="w-6 h-6 mr-2">
+                            <div class="font-medium text-gray-700 moulpali-regular">បញ្ជីមុខម្ហូប</div>
+                        </div>
+                        <button class="flex items-center text-gray-600 hover:text-gray-800">
+                            មើលទាំងអស់
+                            <img src="images/skip.svg" alt="" class="w-4 h-4 ml-2">
+                        </button>
                     </div>
-                    <button class="flex items-center text-gray-600 hover:text-gray-800">
-                        មើលទាំងអស់
-                        <img src="images/skip.svg" alt="" class="w-4 h-4 ml-2">
-                    </button>
+                    <div class="grid grid-cols-6 gap-4">
+                        <x-category-card image="images/category/all.svg" title="ទាំងអស់"></x-category-card>
+                        <x-category-card image="images/category/breakfast.svg" title="ពេលព្រឹក"></x-category-card>
+                        <x-category-card image="images/category/dessert.svg" title="បង្អែម"></x-category-card>
+                        <x-category-card image="images/category/dinner.svg" title="ពេលល្ងាច"></x-category-card>
+                        <x-category-card image="images/category/drink.svg" title="ភេជស្ជៈ"></x-category-card>
+                        <x-category-card image="images/category/healthy.svg" title="សុខភាព"></x-category-card>
+                    </div>
                 </div>
-                <div class="grid grid-cols-6 gap-4">
-                    <x-category-card image="images/category/all.svg" title="ទាំងអស់"></x-category-card>
-                    <x-category-card image="images/category/breakfast.svg" title="ពេលព្រឹក"></x-category-card>
-                    <x-category-card image="images/category/dessert.svg" title="បង្អែម"></x-category-card>
-                    <x-category-card image="images/category/dinner.svg" title="ពេលល្ងាច"></x-category-card>
-                    <x-category-card image="images/category/drink.svg" title="ភេជស្ជៈ"></x-category-card>
-                    <x-category-card image="images/category/healthy.svg" title="សុខភាព"></x-category-card>
+
+                <!-- Popular Dishes Section -->
+                <div class="rounded-2xl bg-white shadow mt-4 p-6 ">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="flex items-center">
+                            <img src="images/flower.svg" alt="flower" class="w-6 h-6 mr-2">
+                            <div class="font-medium text-gray-700 moulpali-regular">ម្ហូបពេញនិយម</div>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-3 gap-4">
+                        <!-- Recipe Card 1 -->
+                        <div class="bg-white rounded-2xl shadow-md p-4">
+                            <img src="images/recipe/recipe.svg" alt="recipe" class="w-full h-32 object-cover rounded-2xl">
+                            <div class="mt-4">
+                                <div class="flex justify-between items-center">
+                                    <div class="font-medium text-gray-800">ប្រហុកចំហុយ</div>
+                                    <img src="images/unlike.svg" alt="like" class="w-6 h-6 text-yellow-500">
+                                </div>
+                                <div class="flex items-center gap-2 text-gray-600 mt-2">
+                                    <img src="images/duration.svg" alt="duration" class="w-4 h-4">
+                                    <div class="text-sm">55 នាទី</div>
+                                </div>
+                                <div class="w-20 h-6 bg-amber-100 rounded-md flex justify-center items-center mt-2">
+                                    <div class="text-yellow-700 text-xs font-medium">ងាយស្រួល</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add more recipe cards here -->
+                    </div>
                 </div>
             </div>
-            <div class="bg-white shadow mt-4 p-6 rounded">
-                <div class="flex items-center justify-between mb-4">
-                    <div class="flex items-center">
-                        <img src="images/flower.svg" alt="flower" class="w-6 h-6 mr-2">
-                        <div class="font-medium text-gray-700">រូបមន្ដម្ហូប</div>
+
+            <!-- Right Section -->
+            <div>
+                <div class="bg-white shadow mt-4 p-6 rounded-2xl">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="flex items-center">
+                            <img src="images/flower.svg" alt="flower" class="w-6 h-6 mr-2">
+                            <div class="font-medium text-gray-700 moulpali-regular">រូបមន្ដម្ហូប</div>
+                        </div>
                     </div>
-                </div>
-                <div class="grid grid-cols-6 ">
-                    <!-- Add your category cards here -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 items-center bg-white rounded-lg ">
+                        <!-- Image Section -->
+                        <div class="col-span-1 flex justify-center items-center">
+                            <img src="images/recipe/recipe.svg" alt="recipe" class="w-24 h-24 rounded-lg">
+                        </div>
+
+                        <!-- Content Section -->
+                        <div class="col-span-2 grid gap-2">
+                            <!-- Title and Like Icon -->
+                            <div class="flex justify-between items-center">
+                                <div class="font-medium text-gray-800">ប្រហុកចំហុយ</div>
+                                <img src="images/unlike.svg" alt="like" class="w-6 h-6 text-yellow-500">
+                            </div>
+
+                            <!-- Duration Section -->
+                            <div class="flex items-center gap-2 text-gray-600">
+                                <img src="images/duration.svg" alt="duration" class="w-4 h-4">
+                                <div class="text-sm">55 នាទី</div>
+                            </div>
+
+                            <!-- Difficulty Section -->
+                            <div class="w-20 h-6 bg-amber-100 rounded-md flex justify-center items-center">
+                                <div class="text-yellow-700 text-xs font-medium">ងាយស្រួល</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+
 
 
     </div>
