@@ -59,7 +59,7 @@
                                 class="btn background1 w-100 d-flex align-items-center justify-content-center">
                                 <img src="images/Google_logo.png" alt="Google" class="me-2"
                                     style="width: 20px; height: 20px;">
-                                ចូលគណនីតាមរយៈ​ Google
+                                ចូលគណនីតាមរយៈ Google
                             </button>
                         </form>
                     </div>

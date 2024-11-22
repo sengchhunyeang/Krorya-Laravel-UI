@@ -13,15 +13,15 @@ class Card extends Component
      */
     public $image;
     public $altText;
-    public $content;
+    public $foodName;
     public $rate;
     public $price;
-    public function __construct($image, $altText, $content, $rate, $price)
+    public function __construct($image, $altText, $foodName, $rate, $price)
     {
         //
         $this->image = $image;
         $this->altText = $altText;
-        $this->content = $content;
+        $this->foodName = $foodName;
         $this->rate = $rate;
         $this->price = $price;
     }

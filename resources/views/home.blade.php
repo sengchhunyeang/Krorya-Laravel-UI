@@ -18,7 +18,7 @@
 <body class="bg-gray-100">
 <div class="flex">
     <!-- Sidebar -->
-    <div class="w-1/6 bg-white shadow-md h-screen p-4">
+    <div class="w-1/6 bg-white shadow-md h-screen p-4 ">
         <div class="text-center mb-4">
             <img src="images/Logo.png" alt="Logo" class="w-1/2 mx-auto">
         </div>
@@ -69,25 +69,30 @@
         <!-- Welcome, Section -->
         <section class="flex items-center justify-between bg-white  shadow-md rounded-2xl m-6 p-6">
             <!-- Text Section -->
-            <div class="w-full md:w-1/2">
-                <h1 class="krorya-welcome md:text-4xl font-bold text-slate-700">
-                    ស្វាគមន៍មកកាន់ក្រយ៉ា
-                </h1>
-                <p class="text-sm md:text-md text-slate-800">
-                    ម្ហូបខ្មែរ មានច្រើនសណ្ឋានដូចជា ស្ល ឆា ចៀន ស្ងោរ ជាដើម
-                    <br/>
-                    និងមានរសជាតិប្លែកៗពីគ្នា។
-                </p>
-                <Button href="/" class="px-4 py-2 btn rounded-md text-white krorya-color-primary-background">
-                    ស្វែងរកមុខម្ហូប
-                </Button>
+            <div class="grid grid-rows-3">
+                <div>
+                    <h1 class="krorya-welcome md:text-4xl font-bold text-slate-700 text-4xl">
+                        ស្វាគមន៍មកកាន់ក្រយ៉ា
+                    </h1>
+                </div>
+                <div>
+                    <p class="text-2xl md:text-md text-slate-800">
+                        ម្ហូបខ្មែរ មានច្រើនសណ្ឋានដូចជា ស្ល ឆា ចៀន ស្ងោរ ជាដើម
+                        <br/>
+                        និងមានរសជាតិប្លែកៗពីគ្នា។
+                    </p>
+                </div>
+                <div>
+                    <Button href="/" class="px-4 py-2 btn rounded-md text-white krorya-color-primary-background mt-6">
+                        ស្វែងរកមុខម្ហូប
+                    </Button>
+                </div>
             </div>
             <!-- Image Section -->
             <div class="w-full md:w-1/2">
                 <img src="images/welcome_image.png" alt="Food" class="rounded-2xl shadow-lg w-full object-cover">
             </div>
         </section>
-
 
 
         <!-- Card Filter Section -->
@@ -126,22 +131,14 @@
                     </div>
                     <div class="grid grid-cols-3 gap-4">
                         <!-- Recipe Card 1 -->
-                        <div class="bg-white rounded-2xl shadow-md p-4">
-                            <img src="images/recipe/recipe.svg" alt="recipe" class="w-full h-32 object-cover rounded-2xl">
-                            <div class="mt-4">
-                                <div class="flex justify-between items-center">
-                                    <div class="font-medium text-gray-800">ប្រហុកចំហុយ</div>
-                                    <img src="images/unlike.svg" alt="like" class="w-6 h-6 text-yellow-500">
-                                </div>
-                                <div class="flex items-center gap-2 text-gray-600 mt-2">
-                                    <img src="images/duration.svg" alt="duration" class="w-4 h-4">
-                                    <div class="text-sm">55 នាទី</div>
-                                </div>
-                                <div class="w-20 h-6 bg-amber-100 rounded-md flex justify-center items-center mt-2">
-                                    <div class="text-yellow-700 text-xs font-medium">ងាយស្រួល</div>
-                                </div>
-                            </div>
-                        </div>
+                        <x-card
+                            image="images/recipe/recipe.svg"
+                            altText="Descriptive text"
+                            foodName="ទឺកគ្រឿង"
+                            rate="4.5"
+                            price="១០០០០">
+                        </x-card>
+
                         <!-- Add more recipe cards here -->
                     </div>
                 </div>
@@ -185,7 +182,6 @@
                 </div>
             </div>
         </div>
-
 
 
     </div>
