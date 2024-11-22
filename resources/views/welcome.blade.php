@@ -20,7 +20,7 @@
             width: 80%;
             background-color: rgba(155, 153, 153, 0.095);
             backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px); 
+            -webkit-backdrop-filter: blur(10px);
             padding: 15px;
             border-radius: 8px;
             text-align: center;

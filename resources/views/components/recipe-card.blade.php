@@ -1,26 +1,33 @@
-<div class=" mb-3" style="max-width: 400px; padding: 10px;">
-    <div class="row ">
-        <div class="col-md-4">
-            <img src="{{ $recipeImage }}" class="rounded" alt="{{ $altText }}" height="100%" width="100%">
+<div class="mb-3 max-w-sm p-3 bg-white rounded shadow">
+    <div class="flex">
+        <!-- Image Section -->
+        <div class="w-1/3">
+            <img src="{{ $recipeImage }}" class="rounded w-full h-full object-cover" alt="{{ $altText }}">
         </div>
-        <div class="col-md-8">
-
-            <div class="d-flex flex-row justify-content-between align-items-center">
-                <div class="card-title fs-5 ">{{ $recipeName }}</div>
-                <button class="btn">
+        <!-- Content Section -->
+        <div class="w-2/3 pl-4">
+            <!-- Title and Like Button -->
+            <div class="flex justify-between items-center">
+                <div class="text-lg font-semibold">{{ $recipeName }}</div>
+                <button class="p-1">
                     @if($liked)
-                        <img src="images/like.svg" alt="like" style="width: 24px; height: 24px;">
+                    <img src="images/like.svg" alt="like" class="w-6 h-6">
                     @else
-                        <img src="images/unlike.svg" alt="unlike" style="width: 24px; height: 24px;">
+                    <img src="images/unlike.svg" alt="unlike" class="w-6 h-6">
                     @endif
                 </button>
             </div>
-            
-            <div class="duration d-flex flex-row">
-                <img src="images/duration.svg" class="img-fluid rounded-top" alt="duration" />
-                <p class="card-text p-2">{{ $duration }}</p>
+
+            <!-- Duration -->
+            <div class="flex items-center mt-2">
+                <img src="images/duration.svg" class="w-5 h-5" alt="duration">
+                <p class="ml-2">{{ $duration }}</p>
             </div>
-            <button class="btn btn-warning krorya-color-primary-background ">{{ $level }}</button>
+
+            <!-- Level Button -->
+            <button class="mt-3 px-4 py-2 bg-yellow-500 text-white rounded">
+                {{ $level }}
+            </button>
         </div>
     </div>
 </div>

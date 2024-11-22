@@ -1,4 +1,17 @@
 
-.krorya-color-primary {
-    color: #D7AD45;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer utilities {
+    .krorya-welcome {
+        @apply bg-krorya-welcome-gradient bg-clip-text text-transparent;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .krorya-color-primary {
+        color: #D7AD45;
+    }
+    .krorya-color-primary-background {
+        background-color: #D7AD45
+    }
 }

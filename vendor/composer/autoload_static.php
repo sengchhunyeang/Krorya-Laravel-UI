@@ -550,6 +550,8 @@ class ComposerStaticInit9c491b8531eec05ba41a11d9276a5749
         'App\\Providers\\EventServiceProvider' => __DIR__ . '/../..' . '/app/Providers/EventServiceProvider.php',
         'App\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RouteServiceProvider.php',
         'App\\View\\Components\\Card' => __DIR__ . '/../..' . '/app/View/Components/Card.php',
+        'App\\View\\Components\\CategoryCard' => __DIR__ . '/../..' . '/app/View/Components/CategoryCard.php',
+        'App\\View\\Components\\RecipeCard' => __DIR__ . '/../..' . '/app/View/Components/RecipeCard.php',
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
         'Brick\\Math\\BigDecimal' => __DIR__ . '/..' . '/brick/math/src/BigDecimal.php',
         'Brick\\Math\\BigInteger' => __DIR__ . '/..' . '/brick/math/src/BigInteger.php',
